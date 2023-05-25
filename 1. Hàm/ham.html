@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+
+square of <input type="text" id="input" oninput="calculate()"> is <span id="result"></span>
+
+
+<script>
+    /*  // khai báo hàm
+      function add(a,b) {   // function -> hàm, add = name (tên hàm) (a,b)-> tham số parameters
+          //code
+          return a+b;     // có thể có hoặc có thể k, trả vể; chỉ trả về 1 giá trị,
+                          // toàn bộ code sau return sẽ k được thực thi
+
+      }
+      // vd tính 5 + 7  => gọi haàm:
+      let sum = add(5,7); //5,7 đối số
+      console.log(sum);
+      console.log(add(5,7))
+  /// (1)
+      function info() {
+          let name = "myFunction"
+          console.log('hello' + name);
+      }
+      info()
+
+
+
+      // (2)
+      let add1 = function (a,b){
+          return a+b;
+
+      }
+       let a = add1(5,7);
+      console.log(a)
+
+      //(3)thực hiện 1 nhiệm vụ
+      let add2 = (a,b) => a+b;
+      // nhiều nhiệm vụ thì thêm {}
+      let  add3 = (a,b) => {
+
+           return a+b;};
+
+      console.log(add3(5,8));
+      // 1 tham số
+      let x =3;
+      let x2 = a => x*a;
+      console.log(x2(2))
+  */
+
+
+    function square(number) {
+        let result = number * number;
+        return result;
+    }
+function calculate() {
+        let input = document.getElementById('input').value;
+        let result = square(input);
+        document.getElementById("result").innerHTML = result;
+}
+
+
+
+      /*  function myFunction() {
+        let firstArg = arguments[0];
+        let secondArg = arguments[1];
+        alert("firstArg is: " + firstArg);
+        alert("secondArg is: " + secondArg);
+    }
+        myFunction("hello","world");*/
+/*
+    let aNewVariable = "is global.";
+    function doSomething(incomingBits) {
+        alert("Global variable within the function: " + aNewVariable);
+        alert("Local variable within the function: " + incomingBits);
+    }*/
+
+
+    function addNumbers(){
+        firstNum = 4;
+        secondNum = 8;
+        result = firstNum + secondNum;
+        return result;
+    }
+    result = 0;
+    sum = addNumbers();
+    console.log(sum)
+
+
+
+
+</script>
+</body>
+</html>
